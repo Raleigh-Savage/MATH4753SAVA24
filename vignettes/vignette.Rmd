@@ -1,0 +1,53 @@
+---
+title: "My Package Vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{My Package Vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753SAVA24)
+```
+
+# Function 1
+
+The first function I will be showcasing will be the myncurve function. I will just be using predefined numbers as a data set is not needed for this function:
+
+```{r}
+myncurve(5, 10, 2)
+```
+
+# Function 2
+
+The next function I will be using is the myclt function and is a function used to visualize the central limit theorem. I will once again be using predefined values:
+
+```{r}
+myclt(n=10,iter=10000)
+```
+
+# Function 3
+
+The next function I will be showcasing is the myboot2 function. This function performs a bootstrap operation from a sample and produces a graph along with general results from the function.
+
+```{r}
+sam = c(1,1,1,2,2,2,2,3,3,3,4,4)
+myboot2(x = sam, fun = "median")
+```
+
+# Function 4
+
+The last function I will showcase is the function I made for project 1, ntickets. It determines the number of seats an airline should sell depending on the likelihood of someone showing up and the number of seats on a plane.
+
+```{r}
+ntickets(N=400, gamma=0.02, p=0.95)
+```
+

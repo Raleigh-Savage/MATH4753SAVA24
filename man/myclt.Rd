@@ -18,5 +18,5 @@ Histogram of r uniform distribution showing concepts of the central limit theore
 Central Limit Theorem Plotter
 }
 \examples{
-w=myclt(n=10,iter=10000)
+myclt(n=10,iter=10000)
 }
